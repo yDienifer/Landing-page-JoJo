@@ -1,0 +1,26 @@
+/* Navbar mobile */
+.navbar-mobile
+{
+    display: none;
+    float: right;
+    margin-top: -190px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar-mobile div
+{
+    width: 29px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+    cursor: pointer;
+}
+
+                /* Menu responsive */
+@media (max-width: 1000px){
+    .navbar-mobile
+    {
+        display: block;
+    }
+}

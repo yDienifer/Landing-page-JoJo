@@ -1,0 +1,36 @@
+header navbar ul li a
+{
+  z-index: 1;
+  cursor: pointer;
+}
+
+header navbar ul, li, a 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  font-family: 'Azonix', sans-serif;
+  color: white;
+  padding: 10px 10px; /* Corresponde à distância interna entre o elemento e a sua borda.  */
+  text-shadow: 0.1em 0.1em 0.9em #333;
+  transition: 0.6s;
+}
+
+navbar a:hover
+{
+  background: #322bfc98;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+#home
+{
+  z-index: 1;
+  background: #951bbe7e;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Tira destaque azul ao clicar*/
+}

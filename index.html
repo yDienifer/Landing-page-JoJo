@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JoJo Bizarre Adventure</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/navbar-mobile.css">
+</head>
+<body>
+  <header>
+    <navbar>
+      <ul>
+        <li><a id="home" onclick="videoUrl('video/JoJo no Kimyo na Boken.mp4');textChange('');" href="#">Home</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </navbar>
+    <div class="navbar-mobile">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+  </div>
+    <ion-icon id="my-logo" name="infinite-outline"></ion-icon>
+  </header>
+  <div class="Pagina-controle">
+ <div class="social">
+    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a> 
+  </div>
+  <div class="Pagina-inicial">
+    <img id="logo" src="/home/dienifersiqueira/Landing-page-JoJo/img/JoJoBizarre_Adventure_logo.png" width="350px" title="JoJo-Logo" alt="Logo-JoJo"/>
+    <p id="paragrafo"> No ano de 1888, conhecemos o primeiro JoJo, Jonathan Joestar, um garoto de classe alta, porém, muito solitário, devido a morte de sua mãe. O irmão adotivo de Jojo é Dio Brando, um garoto de classe baixa que havia perdido o pai, e então, sido adotado por George Joestar, pai de Jonathan. Desde então, Dio, com inveja, decide tirar tudo de Jojo.</p>
+  </div>
+  <div class="video">
+  <video id="slider" autoplay loop muted>
+    <source src="/home/dienifersiqueira/Landing-page-JoJo/video/JoJo no Kimyo na Boken.mp4" type="video/mp4">
+    <source src="/home/dienifersiqueira/Landing-page-JoJo/video/jonathan.mp4" type="video/mp4">
+    <div class="Information-dio">
+    <source src="/home/dienifersiqueira/Landing-page-JoJo/video/dio-brando.mp4" type="video/mp4">  
+    </div>
+  </video>    
+  <ul class="navegacao">
+    <button id="button-mangá"> Mangá </button>
+    <button> Anime </button>
+  <li onclick="videoUrl('/home/dienifersiqueira/Landing-page-JoJo/video/jonathan.mp4');textChangeJonathan('');removeListener('');"><img id="Jonathan" src="/home/dienifersiqueira/Landing-page-JoJo/img/jonathan-joestar.png" width="200px" title="Jonathan-Joestar" alt="Jonathan-Joestar"></li>
+  <li onclick="videoUrl('/home/dienifersiqueira/Landing-page-JoJo/video/dio-brando.mp4'); textChangeDio('');"><img id="Dio" src="/home/dienifersiqueira/Landing-page-JoJo/img/dio-brando.png" width="173px" title="Dio-Brando" alt="Dio-Brando"></li>
+  </ul>
+  </div>
+  <script type="text/JavaScript">
+      function videoUrl(hmmmmmm){
+        document.getElementById("slider").src = hmmmmmm;
+      }
+      function textChangeDio(hmmmmmm){
+        document.getElementById('paragrafo').textContent="Dio Brando é o antagonista de Phantom Blood, e inclusive, o irmão adotivo de Jonathan Joestar. A infância e adolescência foram ciclos obscuros em sua vida, em consequência de seu pai ser alcoólatra, a perda de sua mãe, e a situação de miséria, em que estava. Dio é mui egoísta e sádico, sendo capaz de fazer qualquer coisa para conseguir o que cobiça.";
+      }
+      function textChangeJonathan(hmmmmmm) {
+        document.getElementById('paragrafo').textContent = "Jonathan Joestar é o protagonista de Phantom Blood, um jovem de classe alta, não obstante, deveras solitário, devido a perda de sua mãe, quando ainda era um bebê. Os dias de solidão teriam um final, era o que Jojo presumia quando recebeu a notícia de que seu pai havia adotado um garoto, denominado Dio Brando, o qual, que destruiria a sua vida.";
+      }
+     function textChange(hmmmmmm) {
+        document.getElementById('paragrafo').textContent = "No ano de 1888, conhecemos o primeiro JoJo, Jonathan Joestar, um garoto de classe alta, porém, muito solitário, devido a morte de sua mãe. O irmão adotivo de Jojo é Dio Brando, um garoto de classe baixa que havia perdido o pai, e então, sido adotado por George Joestar, pai de Jonathan. Desde então, Dio, com inveja, decide tirar tudo de Jojo.";
+      }
+  </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
