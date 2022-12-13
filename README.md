@@ -4,8 +4,6 @@
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=purple&style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
-
 > A landing page possui como objetivo orientar o usuário que se interessa em acompanhar o anime, com duas opçoes de visualização do conteúdo, juntamente de uma interface interativa.
 
 ### Ajustes e melhorias
